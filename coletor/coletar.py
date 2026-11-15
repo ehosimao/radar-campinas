@@ -224,14 +224,11 @@ def main():
         materias.extend(itens)
     gravar("materias", materias, None, {"ano": ANOS})
 
-    # Autoria: só dos autores ligados aos vereadores da legislatura atual
-    autores_parl = [a for a in autores if a.get("object_id") in parl_ids
-                    and "parlamentar" in json.dumps(a, ensure_ascii=False).lower()]
-    resumo["autores_parlamentares"] = len(autores_parl)
-    ids_mat = {m["id"] for m in materias}
-    autorias = por_chave("autorias", "materia/autoria", "autor", [a["id"] for a in autores_parl],
-                         limite_tabela_inteira=0)
-    resumo["autorias_no_periodo"] = sum(1 for a in autorias if a.get("materia") in ids_mat)
+    # A autoria já vem em cada matéria (campo "autores": ids da tabela base/autor).
+    ids_autor_parl = {a["id"] for a in autores if a.get("object_id") in parl_ids and a.get("tipo") == 1}
+    resumo["autores_parlamentares"] = len(ids_autor_parl)
+    resumo["materias_de_vereadores"] = sum(
+        1 for m in materias if ids_autor_parl.intersection(m.get("autores") or []))
 
     # --- Conferência mínima antes de publicar ---
     t = resumo["tabelas"]
@@ -244,8 +241,8 @@ def main():
         problemas.append("poucas presenças")
     if t["materias"]["registros"] < 10000:
         problemas.append("poucas matérias")
-    if resumo["autorias_no_periodo"] < 5000:
-        problemas.append("poucas autorias no período")
+    if resumo["materias_de_vereadores"] < 5000:
+        problemas.append("poucas matérias com autoria de vereador")
     resumo["fim"] = time.strftime("%Y-%m-%dT%H:%M:%S")
     resumo["requisicoes"] = _n_req
     resumo["segundos_por_requisicao"] = round(_t_req / max(_n_req, 1), 2)
