@@ -34,7 +34,7 @@ jobs:
             echo "Nada mudou."
           else
             git commit -m "Coleta $(date -u +%Y-%m-%d) (${{ steps.coleta.outcome }})"
-            git push
+            for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
           fi
       - name: Falhar se a coleta falhou
         if: steps.coleta.outcome != 'success'
