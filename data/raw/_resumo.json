@@ -1,0 +1,619 @@
+{
+ "base": "https://sapl.campinas.sp.leg.br/api",
+ "desde": "2025-01-01",
+ "inicio": "2026-11-15T19:14:13",
+ "tabelas": {
+  "legislaturas": {
+   "registros": 19,
+   "total_informado": 19,
+   "filtro": null,
+   "campos": [
+    "__str__",
+    "data_eleicao",
+    "data_fim",
+    "data_inicio",
+    "id",
+    "metadata",
+    "numero",
+    "observacao"
+   ],
+   "exemplo": {
+    "id": 19,
+    "__str__": "19ª (2025 - 2028) (Atual)",
+    "metadata": {},
+    "numero": 19,
+    "data_inicio": "2025-01-01",
+    "data_fim": "2028-12-31",
+    "data_eleicao": "2024-10-06",
+    "observacao": ""
+   }
+  },
+  "parlamentares": {
+   "registros": 327,
+   "total_informado": 327,
+   "filtro": null,
+   "campos": [
+    "__str__",
+    "ativo",
+    "biografia",
+    "cropping",
+    "email",
+    "endereco_web",
+    "fotografia",
+    "id",
+    "locais_atuacao",
+    "matricula",
+    "metadata",
+    "nivel_instrucao",
+    "nome_completo",
+    "nome_parlamentar",
+    "numero_gab_parlamentar",
+    "profissao",
+    "sexo",
+    "telefone",
+    "telefone_celular"
+   ],
+   "exemplo": {
+    "id": 149,
+    "__str__": "Adalberto Prado e Silva",
+    "metadata": {},
+    "matricula": null,
+    "nome_completo": "Adalberto Prado e Silva",
+    "nome_parlamentar": "Adalberto Prado e Silva",
+    "sexo": "M",
+    "numero_gab_parlamentar": "",
+    "telefone": "",
+    "telefone_celular": "",
+    "endereco_web": "",
+    "profissao": "",
+    "email": "",
+    "locais_atuacao": "",
+    "ativo": false,
+    "biografia": "",
+    "fotografia": null,
+    "cropping": "",
+    "nivel_instrucao": null
+   }
+  },
+  "mandatos": {
+   "registros": 610,
+   "total_informado": 610,
+   "filtro": null,
+   "campos": [
+    "__str__",
+    "coligacao",
+    "data_expedicao_diploma",
+    "data_fim_mandato",
+    "data_inicio_mandato",
+    "id",
+    "legislatura",
+    "metadata",
+    "observacao",
+    "parlamentar",
+    "tipo_afastamento",
+    "tipo_causa_fim_mandato",
+    "titular",
+    "votos_recebidos"
+   ],
+   "exemplo": {
+    "id": 236,
+    "__str__": "Adalberto Prado e Silva 2ª (1952 - 1955) ",
+    "metadata": {},
+    "tipo_causa_fim_mandato": null,
+    "data_inicio_mandato": "1952-01-01",
+    "data_fim_mandato": "1955-12-31",
+    "votos_recebidos": null,
+    "data_expedicao_diploma": null,
+    "titular": true,
+    "observacao": "",
+    "parlamentar": 149,
+    "tipo_afastamento": null,
+    "legislatura": 2,
+    "coligacao": null
+   }
+  },
+  "filiacoes": {
+   "registros": 194,
+   "total_informado": 194,
+   "filtro": null,
+   "campos": [
+    "__str__",
+    "data",
+    "data_desfiliacao",
+    "id",
+    "metadata",
+    "parlamentar",
+    "partido"
+   ],
+   "exemplo": {
+    "id": 152,
+    "__str__": "Ailton da Farmácia - PSB - Partido Socialista Brasileiro",
+    "metadata": {},
+    "data": "2020-03-31",
+    "data_desfiliacao": null,
+    "parlamentar": 311,
+    "partido": 7
+   }
+  },
+  "partidos": {
+   "registros": 53,
+   "total_informado": 53,
+   "filtro": null,
+   "campos": [
+    "__str__",
+    "data_criacao",
+    "data_extincao",
+    "id",
+    "logo_partido",
+    "metadata",
+    "nome",
+    "observacao",
+    "sigla"
+   ],
+   "exemplo": {
+    "id": 29,
+    "__str__": "ARENA - Aliança Renovadora Nacional",
+    "metadata": {},
+    "sigla": "ARENA",
+    "nome": "Aliança Renovadora Nacional",
+    "data_criacao": "1966-04-04",
+    "data_extincao": "1979-12-20",
+    "logo_partido": null,
+    "observacao": ""
+   }
+  },
+  "autores": {
+   "registros": 405,
+   "total_informado": 405,
+   "filtro": null,
+   "campos": [
+    "__str__",
+    "autor_related",
+    "cargo",
+    "content_type",
+    "id",
+    "metadata",
+    "nome",
+    "object_id",
+    "operadores",
+    "tipo"
+   ],
+   "exemplo": {
+    "id": 168,
+    "__str__": "Adalberto Prado e Silva",
+    "metadata": {},
+    "autor_related": {
+     "value": 149,
+     "text": "Adalberto Prado e Silva"
+    },
+    "object_id": 149,
+    "nome": "Adalberto Prado e Silva",
+    "cargo": "",
+    "tipo": 1,
+    "content_type": 1,
+    "operadores": []
+   }
+  },
+  "tipos_autor": {
+   "registros": 10,
+   "total_informado": 10,
+   "filtro": null,
+   "campos": [
+    "__str__",
+    "content_type",
+    "descricao",
+    "id",
+    "metadata"
+   ],
+   "exemplo": {
+    "id": 3,
+    "__str__": "Bancada",
+    "metadata": {},
+    "descricao": "Bancada",
+    "content_type": null
+   }
+  },
+  "tipos_materia": {
+   "registros": 46,
+   "total_informado": 46,
+   "filtro": null,
+   "campos": [
+    "__str__",
+    "descricao",
+    "id",
+    "metadata",
+    "num_automatica",
+    "quorum_minimo_votacao",
+    "sequencia_numeracao",
+    "sequencia_regimental",
+    "sigla"
+   ],
+   "exemplo": {
+    "id": 41,
+    "__str__": "Ata de Reunião Extraordinária",
+    "metadata": {},
+    "sigla": "ATARE",
+    "descricao": "Ata de Reunião Extraordinária",
+    "num_automatica": false,
+    "quorum_minimo_votacao": 1,
+    "sequencia_numeracao": "",
+    "sequencia_regimental": 1
+   }
+  },
+  "tipos_sessao": {
+   "registros": 7,
+   "total_informado": null,
+   "filtro": null,
+   "campos": [
+    "id",
+    "nome"
+   ],
+   "exemplo": {
+    "id": 5,
+    "nome": "Audiência Pública"
+   }
+  },
+  "sessoes": {
+   "registros": 2106,
+   "total_informado": null,
+   "filtro": null,
+   "campos": [
+    "data_inicio",
+    "hora_inicio",
+    "id",
+    "legislatura",
+    "legislatura_numero",
+    "numero",
+    "publicar_pauta",
+    "sessao_legislativa",
+    "tipo",
+    "tipo_id",
+    "upload_ata",
+    "upload_pauta"
+   ],
+   "exemplo": {
+    "id": 2379,
+    "numero": 67,
+    "data_inicio": "2026-11-18",
+    "hora_inicio": "18:00",
+    "legislatura": "19ª (2025 - 2028) (Atual)",
+    "legislatura_numero": 19,
+    "sessao_legislativa": "44º (2025 - 2026) (Atual)",
+    "tipo": "Ordinária",
+    "tipo_id": 1,
+    "upload_ata": null,
+    "upload_pauta": null,
+    "publicar_pauta": true
+   }
+  },
+  "presencas": {
+   "registros": 4612,
+   "total_informado": null,
+   "filtro": {
+    "sessao_plenaria": "257 valores"
+   },
+   "campos": [
+    "__str__",
+    "data_sessao",
+    "id",
+    "metadata",
+    "parlamentar",
+    "sessao_plenaria"
+   ],
+   "exemplo": {
+    "id": 41350,
+    "__str__": "SessaoPlenariaPresenca object (41350)",
+    "metadata": {},
+    "data_sessao": null,
+    "sessao_plenaria": 2106,
+    "parlamentar": 328
+   }
+  },
+  "presencas_ordemdia": {
+   "registros": 4586,
+   "total_informado": null,
+   "filtro": {
+    "sessao_plenaria": "257 valores"
+   },
+   "campos": [
+    "__str__",
+    "id",
+    "metadata",
+    "parlamentar",
+    "sessao_plenaria"
+   ],
+   "exemplo": {
+    "id": 43709,
+    "__str__": "Sessão: 1ª Reunião Ordinária da 44ª Sessão Legislativa da 19ª Legislatura Parlamentar: Arnaldo Salvetti",
+    "metadata": {},
+    "sessao_plenaria": 2106,
+    "parlamentar": 328
+   }
+  },
+  "justificativas_ausencia": {
+   "registros": 0,
+   "total_informado": 0,
+   "filtro": {
+    "sessao_plenaria": "PULADO"
+   },
+   "campos": [],
+   "exemplo": null
+  },
+  "ordemdia": {
+   "registros": 1804,
+   "total_informado": null,
+   "filtro": {
+    "sessao_plenaria": "257 valores"
+   },
+   "campos": [
+    "__str__",
+    "data_ordem",
+    "id",
+    "materia",
+    "metadata",
+    "numero_ordem",
+    "observacao",
+    "registro_aberto",
+    "resultado",
+    "sessao_plenaria",
+    "sub_numero_ordem",
+    "tipo_quorum",
+    "tipo_votacao",
+    "tramitacao",
+    "turno",
+    "veto",
+    "votacao_aberta"
+   ],
+   "exemplo": {
+    "id": 13015,
+    "__str__": "1 - Emenda fls. 52",
+    "metadata": {},
+    "data_ordem": "2025-02-03",
+    "observacao": "",
+    "numero_ordem": 1,
+    "sub_numero_ordem": 1,
+    "resultado": "",
+    "tipo_votacao": 1,
+    "tipo_quorum": 1,
+    "votacao_aberta": false,
+    "registro_aberto": false,
+    "turno": 2,
+    "veto": false,
+    "sessao_plenaria": 2106,
+    "materia": 434762,
+    "tramitacao": null
+   }
+  },
+  "expediente_materia": {
+   "registros": 2775,
+   "total_informado": null,
+   "filtro": {
+    "sessao_plenaria": "257 valores"
+   },
+   "campos": [
+    "__str__",
+    "data_ordem",
+    "id",
+    "materia",
+    "metadata",
+    "numero_ordem",
+    "observacao",
+    "registro_aberto",
+    "resultado",
+    "sessao_plenaria",
+    "sub_numero_ordem",
+    "tipo_quorum",
+    "tipo_votacao",
+    "tramitacao",
+    "turno",
+    "veto",
+    "votacao_aberta"
+   ],
+   "exemplo": {
+    "id": 12080,
+    "__str__": "1 - Ata de Reunião Ordinária nº 73 de 2024",
+    "metadata": {},
+    "data_ordem": "2025-02-03",
+    "observacao": "",
+    "numero_ordem": 1,
+    "sub_numero_ordem": 0,
+    "resultado": "",
+    "tipo_votacao": 1,
+    "tipo_quorum": 1,
+    "votacao_aberta": false,
+    "registro_aberto": false,
+    "turno": 3,
+    "veto": false,
+    "sessao_plenaria": 2106,
+    "materia": 432999,
+    "tramitacao": null
+   }
+  },
+  "registros_votacao": {
+   "registros": 4525,
+   "total_informado": 27597,
+   "filtro": {
+    "local": "ordem/expediente desde 2025-01-01"
+   },
+   "campos": [
+    "__str__",
+    "data_hora",
+    "expediente",
+    "id",
+    "materia",
+    "metadata",
+    "numero_abstencoes",
+    "numero_votos_nao",
+    "numero_votos_sim",
+    "observacao",
+    "ordem",
+    "subtipo_resultado_votacao",
+    "tipo_resultado_votacao",
+    "user"
+   ],
+   "exemplo": {
+    "id": 23305,
+    "__str__": "Ordem: 1 - Projeto de Lei Ordinária nº 351 de 2021 - Votação: Não votado - Matéria: Projeto de Lei Ordinária nº 351 de 2021",
+    "metadata": {},
+    "numero_votos_sim": 0,
+    "numero_votos_nao": 0,
+    "numero_abstencoes": 0,
+    "subtipo_resultado_votacao": 13,
+    "observacao": "",
+    "data_hora": null,
+    "tipo_resultado_votacao": 3,
+    "materia": 386690,
+    "ordem": 12990,
+    "expediente": null,
+    "user": null
+   }
+  },
+  "votos_nominais": {
+   "registros": 60062,
+   "total_informado": null,
+   "filtro": {
+    "parlamentar": "38 valores"
+   },
+   "campos": [
+    "__str__",
+    "data_hora",
+    "expediente",
+    "id",
+    "metadata",
+    "ordem",
+    "parlamentar",
+    "user",
+    "votacao",
+    "voto"
+   ],
+   "exemplo": {
+    "id": 153,
+    "__str__": "Votação: Ordem: 2 - Projeto de Decreto Legislativo nº 244 de 2012 - Votação: Aprovado - Matéria: Projeto de Decreto Legislativo nº 244 de 2012 - Parlamentar: Luis Yabiku",
+    "metadata": {},
+    "voto": "Sim",
+    "data_hora": "2024-01-04T13:58:59.158036-03:00",
+    "votacao": 13,
+    "parlamentar": 32,
+    "user": null,
+    "ordem": null,
+    "expediente": null
+   }
+  },
+  "materias": {
+   "registros": 30725,
+   "total_informado": null,
+   "filtro": {
+    "ano": [
+     2025,
+     2026
+    ]
+   },
+   "campos": [
+    "__str__",
+    "anexadas",
+    "ano",
+    "ano_origem_externa",
+    "apelido",
+    "autores",
+    "complementar",
+    "data_apresentacao",
+    "data_arquivo",
+    "data_fim_prazo",
+    "data_origem_externa",
+    "data_publicacao",
+    "data_ultima_atualizacao",
+    "dias_prazo",
+    "em_tramitacao",
+    "ementa",
+    "folhas",
+    "id",
+    "indexacao",
+    "local_origem_externa",
+    "metadata",
+    "num_volumes_sigadoc",
+    "numero",
+    "numero_origem_externa",
+    "numero_protocolo",
+    "objeto",
+    "observacao",
+    "polemica",
+    "redacao_final",
+    "regime_tramitacao",
+    "requer_audiencia_publica",
+    "resultado",
+    "sgl_sigadoc_redacao_final",
+    "sgl_sigadoc_texto_original",
+    "texto_original",
+    "tipo",
+    "tipo_apresentacao",
+    "tipo_origem_externa",
+    "ultima_edicao",
+    "user"
+   ],
+   "exemplo": {
+    "id": 448390,
+    "__str__": "Ata de Reunião Extraordinária nº 15 de 2025",
+    "metadata": {},
+    "numero": 15,
+    "ano": 2025,
+    "numero_protocolo": null,
+    "data_apresentacao": "2025-11-19",
+    "tipo_apresentacao": "E",
+    "data_publicacao": null,
+    "numero_origem_externa": "",
+    "ano_origem_externa": null,
+    "data_origem_externa": null,
+    "apelido": "",
+    "dias_prazo": null,
+    "data_fim_prazo": null,
+    "em_tramitacao": false,
+    "polemica": false,
+    "objeto": "",
+    "complementar": false,
+    "ementa": "ATA DA 15° REUNIÃO EXTRAORDINÁRIA, REALIZADA EM 17/11/2025.",
+    "indexacao": "",
+    "observacao": "",
+    "resultado": "",
+    "texto_original": "https://sapl.campinas.sp.leg.br/media/sapl/public/materialegislativa/2025/448390/ata_da_15-2025-r.ext.-17-11.pdf",
+    "redacao_final": null,
+    "num_volumes_sigadoc": null,
+    "sgl_sigadoc_texto_original": "",
+    "sgl_sigadoc_redacao_final": "",
+    "folhas": "",
+    "requer_audiencia_publica": false,
+    "data_arquivo": null,
+    "data_ultima_atualizacao": "2025-11-28T17:08:07.147759-03:00",
+    "ultima_edicao": "2025-11-28T17:08:07.089795-03:00",
+    "tipo": 41,
+    "regime_tramitacao": 6,
+    "tipo_origem_externa": null,
+    "local_origem_externa": null,
+    "user": 114,
+    "anexadas": [],
+    "autores": [
+     27
+    ]
+   }
+  }
+ },
+ "avisos": [
+  "justificativas_ausencia: filtro 'sessao_plenaria' ignorado e tabela grande demais (0); pulei"
+ ],
+ "legislatura_atual": {
+  "id": 19,
+  "__str__": "19ª (2025 - 2028) (Atual)",
+  "metadata": {},
+  "numero": 19,
+  "data_inicio": "2025-01-01",
+  "data_fim": "2028-12-31",
+  "data_eleicao": "2024-10-06",
+  "observacao": ""
+ },
+ "votos_nominais_recentes": 13560,
+ "autores_parlamentares": 37,
+ "materias_de_vereadores": 29944,
+ "fim": "2026-11-15T20:07:17",
+ "requisicoes": 2274,
+ "segundos_por_requisicao": 1.1,
+ "problemas": []
+}
