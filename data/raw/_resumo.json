@@ -1,7 +1,7 @@
 {
  "base": "https://sapl.campinas.sp.leg.br/api",
  "desde": "2025-01-01",
- "inicio": "2026-11-20T15:26:28",
+ "inicio": "2026-11-21T14:38:46",
  "tabelas": {
   "legislaturas": {
    "registros": 19,
@@ -612,8 +612,8 @@
  "votos_nominais_recentes": 14121,
  "autores_parlamentares": 37,
  "materias_de_vereadores": 30315,
- "fim": "2026-11-20T16:14:25",
+ "fim": "2026-11-21T15:27:21",
  "requisicoes": 2290,
- "segundos_por_requisicao": 0.95,
+ "segundos_por_requisicao": 0.97,
  "problemas": []
 }
