@@ -1,7 +1,7 @@
 {
  "base": "https://sapl.campinas.sp.leg.br/api",
  "desde": "2025-01-01",
- "inicio": "2026-11-24T17:43:31",
+ "inicio": "2026-11-25T17:12:29",
  "tabelas": {
   "legislaturas": {
    "registros": 19,
@@ -340,7 +340,7 @@
    "exemplo": null
   },
   "ordemdia": {
-   "registros": 1837,
+   "registros": 1848,
    "total_informado": null,
    "filtro": {
     "sessao_plenaria": "259 valores"
@@ -500,7 +500,7 @@
    }
   },
   "materias": {
-   "registros": 31198,
+   "registros": 31307,
    "total_informado": null,
    "filtro": {
     "ano": [
@@ -611,9 +611,9 @@
  },
  "votos_nominais_recentes": 14154,
  "autores_parlamentares": 37,
- "materias_de_vereadores": 30404,
- "fim": "2026-11-24T18:43:02",
- "requisicoes": 2291,
- "segundos_por_requisicao": 1.26,
+ "materias_de_vereadores": 30511,
+ "fim": "2026-11-25T18:20:49",
+ "requisicoes": 2292,
+ "segundos_por_requisicao": 1.49,
  "problemas": []
 }
