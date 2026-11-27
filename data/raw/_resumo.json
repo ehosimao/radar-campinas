@@ -1,7 +1,7 @@
 {
  "base": "https://sapl.campinas.sp.leg.br/api",
  "desde": "2025-01-01",
- "inicio": "2026-11-26T16:53:15",
+ "inicio": "2026-11-27T16:39:04",
  "tabelas": {
   "legislaturas": {
    "registros": 19,
@@ -254,7 +254,7 @@
    }
   },
   "sessoes": {
-   "registros": 2108,
+   "registros": 2110,
    "total_informado": null,
    "filtro": null,
    "campos": [
@@ -272,9 +272,9 @@
     "upload_pauta"
    ],
    "exemplo": {
-    "id": 2381,
-    "numero": 69,
-    "data_inicio": "2026-11-25",
+    "id": 2383,
+    "numero": 70,
+    "data_inicio": "2026-11-30",
     "hora_inicio": "18:00",
     "legislatura": "19ª (2025 - 2028) (Atual)",
     "legislatura_numero": 19,
@@ -283,14 +283,14 @@
     "tipo_id": 1,
     "upload_ata": null,
     "upload_pauta": null,
-    "publicar_pauta": true
+    "publicar_pauta": false
    }
   },
   "presencas": {
    "registros": 4734,
    "total_informado": null,
    "filtro": {
-    "sessao_plenaria": "259 valores"
+    "sessao_plenaria": "261 valores"
    },
    "campos": [
     "__str__",
@@ -313,7 +313,7 @@
    "registros": 4706,
    "total_informado": null,
    "filtro": {
-    "sessao_plenaria": "259 valores"
+    "sessao_plenaria": "261 valores"
    },
    "campos": [
     "__str__",
@@ -340,10 +340,10 @@
    "exemplo": null
   },
   "ordemdia": {
-   "registros": 1847,
+   "registros": 1850,
    "total_informado": null,
    "filtro": {
-    "sessao_plenaria": "259 valores"
+    "sessao_plenaria": "261 valores"
    },
    "campos": [
     "__str__",
@@ -388,7 +388,7 @@
    "registros": 2838,
    "total_informado": null,
    "filtro": {
-    "sessao_plenaria": "259 valores"
+    "sessao_plenaria": "261 valores"
    },
    "campos": [
     "__str__",
@@ -500,7 +500,7 @@
    }
   },
   "materias": {
-   "registros": 31394,
+   "registros": 31436,
    "total_informado": null,
    "filtro": {
     "ano": [
@@ -611,9 +611,9 @@
  },
  "votos_nominais_recentes": 14253,
  "autores_parlamentares": 37,
- "materias_de_vereadores": 30595,
- "fim": "2026-11-26T17:53:13",
- "requisicoes": 2293,
- "segundos_por_requisicao": 1.27,
+ "materias_de_vereadores": 30637,
+ "fim": "2026-11-27T17:35:39",
+ "requisicoes": 2301,
+ "segundos_por_requisicao": 1.17,
  "problemas": []
 }
